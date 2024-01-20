@@ -1,0 +1,23 @@
+Update your owshen to owshen_v0.1.1_x86_64
+Prep
+```bash
+sudo apt update
+sudo apt upgrade
+sudo npm install -g npm@10.3.0
+sudo apt install nodejs -y
+sudo apt install libfuse2 nodejs -y
+sudo npm install -g snarkjs
+```
+Download the app image
+```bash
+wget https://github.com/OwshenNetwork/owshen/releases/download/v0.1.1/Owshen_v0.1.1_x86_64.AppImage
+```
+configure the app image
+```bash
+chmod +x Owshen_v0.1.1_x86_64.AppImage
+./Owshen_v0.1.1_x86_64.AppImage init --mnemonic "<your mnemonic>"
+```
+run the image
+```bash
+./Owshen_v0.1.1_x86_64.AppImage wallet
+```
